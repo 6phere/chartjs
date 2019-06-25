@@ -1,0 +1,58 @@
+{
+  "name": "@sixphere/chartjs",
+  "version": "1.0.0",
+  "description": "Web component implementation of charts elements from Chart.js library",
+  "main": "pkg/dist-web/index.bundled.js",
+  "module": "pkg/dist-web/index.bundled.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run pack:build",
+    "pack:build": "pack build",
+    "serve": "serve",
+    "serve:dev": "npm run pack:build && npm run serve"
+  },
+  "author": "Sixphere Technologies",
+  "license": "MIT",
+  "devDependencies": {
+    "@pika/pack": "^0.4.0",
+    "@pika/plugin-build-web": "^0.4.0",
+    "@pika/plugin-bundle-web": "^0.4.0",
+    "@pika/plugin-standard-pkg": "^0.4.0",
+    "serve": "^11.0.2"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg"
+      ],
+      [
+        "@pika/plugin-build-web"
+      ],
+      [
+        "@pika/plugin-bundle-web"
+      ]
+    ]
+  },
+  "dependencies": {
+    "@sixphere/lit-element": "^1.1.1",
+    "chart.js": "^2.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/6phere/chartjs.git"
+  },
+  "keywords": [
+    "chart.js",
+    "charts",
+    "chart",
+    "sixphere",
+    "custom",
+    "elements",
+    "web",
+    "components"
+  ],
+  "bugs": {
+    "url": "https://github.com/6phere/chartjs/issues"
+  },
+  "homepage": "https://github.com/6phere/chartjs#readme"
+}

@@ -1,0 +1,43 @@
+{
+  "name": "@sixphere/chartjs",
+  "description": "Web component implementation of charts elements from Chart.js library",
+  "version": "1.0.0",
+  "license": "MIT",
+  "files": [
+    "dist-*/",
+    "bin/"
+  ],
+  "pika": true,
+  "sideEffects": false,
+  "keywords": [
+    "chart.js",
+    "charts",
+    "chart",
+    "sixphere",
+    "custom",
+    "elements",
+    "web",
+    "components"
+  ],
+  "homepage": "https://github.com/6phere/chartjs#readme",
+  "bugs": {
+    "url": "https://github.com/6phere/chartjs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/6phere/chartjs.git"
+  },
+  "dependencies": {
+    "@sixphere/lit-element": "^1.1.1",
+    "chart.js": "^2.8.0"
+  },
+  "devDependencies": {
+    "@pika/pack": "^0.4.0",
+    "@pika/plugin-build-web": "^0.4.0",
+    "@pika/plugin-bundle-web": "^0.4.0",
+    "@pika/plugin-standard-pkg": "^0.4.0",
+    "serve": "^11.0.2"
+  },
+  "esnext": "dist-src/index.js",
+  "module": "dist-web/index.js"
+}
